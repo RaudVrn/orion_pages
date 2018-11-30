@@ -650,15 +650,15 @@ button {
   color: #ffffff;
   text-transform: uppercase;
   text-decoration: none;
-  text-shadow: 0 2px 1px #656565; }
+  text-shadow: 0 2px 1px #656565;
+  border-bottom: 4px solid transparent; }
+  .header__menu-link:hover {
+    padding-bottom: 2px;
+    text-shadow: none;
+    border-bottom: 3px solid #ffffff; }
   @media (max-width: 730px) {
     .header__menu-link {
       padding: 0; } }
-
-.header__menu-link:hover {
-  padding-bottom: 2px;
-  text-shadow: none;
-  border-bottom: 3px solid #ffffff; }
 
 .header__singin {
   display: -webkit-box;
@@ -1708,7 +1708,7 @@ button {
     .footer__subscribe-headline {
       font-size: 12px; } }
 
-.footer__subscribe-input:focus {
+.footer__subscribe-input {
   width: 337px;
   height: 40px;
   margin-right: 47px;
@@ -1716,16 +1716,16 @@ button {
   color: #ffffff;
   background-color: #363636;
   border: none; }
-  .footer__subscribe-input:focus:focus {
+  .footer__subscribe-input:focus {
     border-color: white; }
   @media (max-width: 1024px) {
-    .footer__subscribe-input:focus {
+    .footer__subscribe-input {
       width: auto; } }
   @media (max-width: 768px) {
-    .footer__subscribe-input:focus {
+    .footer__subscribe-input {
       padding-right: 0; } }
   @media (max-width: 350px) {
-    .footer__subscribe-input:focus {
+    .footer__subscribe-input {
       padding-right: 0; } }
 
 .footer__subscribe-form {

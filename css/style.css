@@ -544,7 +544,10 @@ button {
 .header__menu {
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex; }
+  display: flex;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline; }
   @media (max-width: 730px) {
     .header__menu--opened {
       display: block; }
@@ -569,6 +572,8 @@ button {
         left: 0;
         display: block;
         margin: 0; }
+      .header__menu--opened .header__menu-link {
+        text-align: center; }
       .header__menu--opened .header__singin {
         position: relative;
         top: 17px;
@@ -628,10 +633,7 @@ button {
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center; }
+          justify-content: space-between; }
   @media (max-width: 730px) {
     .header__menu-list {
       display: none; } }

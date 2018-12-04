@@ -24,8 +24,8 @@ body {
  * `article` contexts in Chrome, Firefox, and Safari.
  */
 h1 {
-  margin: 0.67em 0;
-  font-size: 2em; }
+  font-size: 2em;
+  margin: 0.67em 0; }
 
 /* Grouping content
    ========================================================================== */
@@ -47,10 +47,10 @@ hr {
  * 2. Correct the odd `em` font sizing in all browsers.
  */
 pre {
-  font-size: 1em;
-  /* 2 */
   font-family: monospace, monospace;
-  /* 1 */ }
+  /* 1 */
+  font-size: 1em;
+  /* 2 */ }
 
 /* Text-level semantics
    ========================================================================== */
@@ -65,13 +65,13 @@ a {
  * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
  */
 abbr[title] {
+  border-bottom: none;
+  /* 1 */
   text-decoration: underline;
   /* 2 */
   -webkit-text-decoration: underline dotted;
           text-decoration: underline dotted;
-  /* 2 */
-  border-bottom: none;
-  /* 1 */ }
+  /* 2 */ }
 
 /**
  * Add the correct font weight in Chrome, Edge, and Safari.
@@ -87,10 +87,10 @@ strong {
 code,
 kbd,
 samp {
-  font-size: 1em;
-  /* 2 */
   font-family: monospace, monospace;
-  /* 1 */ }
+  /* 1 */
+  font-size: 1em;
+  /* 2 */ }
 
 /**
  * Add the correct font size in all browsers.
@@ -104,9 +104,9 @@ small {
  */
 sub,
 sup {
-  position: relative;
   font-size: 75%;
   line-height: 0;
+  position: relative;
   vertical-align: baseline; }
 
 sub {
@@ -134,14 +134,14 @@ input,
 optgroup,
 select,
 textarea {
-  margin: 0;
-  /* 2 */
+  font-family: inherit;
+  /* 1 */
   font-size: 100%;
   /* 1 */
   line-height: 1.15;
   /* 1 */
-  font-family: inherit;
-  /* 1 */ }
+  margin: 0;
+  /* 2 */ }
 
 /**
  * Show the overflow in IE.
@@ -177,8 +177,8 @@ button::-moz-focus-inner,
 [type="button"]::-moz-focus-inner,
 [type="reset"]::-moz-focus-inner,
 [type="submit"]::-moz-focus-inner {
-  padding: 0;
-  border-style: none; }
+  border-style: none;
+  padding: 0; }
 
 /**
  * Restore the focus styles unset by the previous rule.
@@ -202,17 +202,17 @@ fieldset {
  *    `fieldset` elements in all browsers.
  */
 legend {
-  display: table;
-  /* 1 */
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  /* 1 */
+  color: inherit;
+  /* 2 */
+  display: table;
   /* 1 */
   max-width: 100%;
   /* 1 */
   padding: 0;
   /* 3 */
-  color: inherit;
-  /* 2 */
   white-space: normal;
   /* 1 */ }
 
@@ -252,10 +252,10 @@ textarea {
  * 2. Correct the outline style in Safari.
  */
 [type="search"] {
-  outline-offset: -2px;
-  /* 2 */
   -webkit-appearance: textfield;
-  /* 1 */ }
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */ }
 
 /**
  * Remove the inner padding in Chrome and Safari on macOS.
@@ -268,10 +268,10 @@ textarea {
  * 2. Change font properties to `inherit` in Safari.
  */
 ::-webkit-file-upload-button {
-  font: inherit;
-  /* 2 */
   -webkit-appearance: button;
-  /* 1 */ }
+  /* 1 */
+  font: inherit;
+  /* 2 */ }
 
 /* Interactive
    ========================================================================== */
@@ -442,10 +442,6 @@ button {
   margin: 0 auto;
   padding: 0 20px; }
 
-.wrapper {
-  max-width: 320px;
-  margin: 0 auto; }
-
 .visually-hidden {
   position: absolute;
   top: 0;
@@ -454,6 +450,10 @@ button {
   height: 1px;
   margin: -1px;
   clip: rect(0 0 0 0); }
+
+.wrapper {
+  max-width: 320px;
+  margin: 0 auto; }
 
 .section-name {
   max-width: 100%;
@@ -522,6 +522,9 @@ button {
 .header__logo-link {
   display: block;
   height: 25px; }
+  @media (max-width: 875px) {
+    .header__logo-link {
+      width: 26px; } }
 
 .header__logo-img {
   fill: #ffffff; }
@@ -551,20 +554,6 @@ button {
   @media (max-width: 730px) {
     .header__menu--opened {
       display: block; }
-      .header__menu--opened .header__menu-burger-bar--top {
-        position: absolute;
-        top: 7px;
-        right: 0;
-        -webkit-transform: rotate(45deg);
-                transform: rotate(45deg); }
-      .header__menu--opened .header__menu-burger-bar--bottom {
-        position: absolute;
-        top: 7px;
-        right: 0;
-        -webkit-transform: rotate(-45deg);
-                transform: rotate(-45deg); }
-      .header__menu--opened .header__menu-burger-bar--middle {
-        display: none; }
       .header__menu--opened .header__menu-list {
         position: relative;
         top: 41px;
@@ -608,7 +597,21 @@ button {
   cursor: pointer; }
   @media (max-width: 730px) {
     .header__menu-burger:hover .header__menu-burger-bar {
-      height: 4px; } }
+      opacity: 0.6; } }
+  .header__menu-burger--opened .header__menu-burger-bar--top {
+    position: absolute;
+    top: 7px;
+    right: 4px;
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg); }
+  .header__menu-burger--opened .header__menu-burger-bar--bottom {
+    position: absolute;
+    top: 7px;
+    right: 4px;
+    -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg); }
+  .header__menu-burger--opened .header__menu-burger-bar--middle {
+    display: none; }
   @media (max-width: 730px) {
     .header__menu-burger {
       position: absolute;
@@ -660,7 +663,8 @@ button {
     border-bottom: 3px solid #ffffff; }
   @media (max-width: 730px) {
     .header__menu-link {
-      padding: 0; } }
+      padding: 0;
+      border-bottom: 5px solid transparent; } }
 
 .header__singin {
   display: -webkit-box;
@@ -713,7 +717,8 @@ button {
       -ms-flex-align: center;
           align-items: center;
   background: url("../img/orion.jpg") no-repeat;
-  background-size: cover; }
+  background-size: cover;
+  background-position: center; }
   @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
     .slider {
       background-image: url("../img/orionx2.jpg"); } }
@@ -914,14 +919,13 @@ button {
   background-color: #cadaec;
   border: 1px solid #cbd7e4;
   border-radius: 5px; }
+  .services__link:hover .services__link-icon {
+    opacity: 0.6; }
 
 .services__link-icon {
   width: 38px;
   height: 96px;
   fill: #ffffff; }
-
-.services__link:hover .services__link-icon {
-  fill: #ebfcff; }
 
 .services__name {
   margin-top: 26px;
@@ -939,10 +943,10 @@ button {
   font-size: 14px;
   line-height: 24px;
   font-family: Open Sans, arial, serif;
-  color: #88929d; }
+  color: #88929d;
+  margin-bottom: 29px; }
   @media (max-width: 768px) {
     .services__desc {
-      margin-bottom: 29px;
       font-size: 12px; } }
 
 .timeline {
@@ -1505,13 +1509,13 @@ button {
       width: auto; } }
 
 .vcard__adr {
-  padding: 32px 23px 0;
+  padding: 32px 23px 15px;
   font-size: 18px;
   text-align: left;
   color: #545454; }
   @media (max-width: 768px) {
     .vcard__adr {
-      margin-bottom: 28px; } }
+      padding-bottom: 28px; } }
   @media (max-width: 320px) {
     .vcard__adr {
       font-size: 16px; } }

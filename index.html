@@ -13,9 +13,9 @@
 
 <body>
 
-  <header class="header padded">
+  <header class="header">
     <h1 class="header__headline visually-hidden">Orion theme</h1>
-    <nav class="header__topbar">
+    <nav class="header__topbar padded">
       <div class="header__left">
         <a class="header__logo-link" href="#slider">
           <picture>
@@ -74,31 +74,65 @@
   </header>
   <main class="main">
     <section class="slider" id="slider">
-      <svg width="62" height="60" xmlns="http://www.w3.org/2000/svg" class="slider__img">
-        <use xlink:href="img/sprite.svg#rocket"></use>
-      </svg>
-      <div class="slider__caption padded">
-        <h2 class="slider__caption-headline">Let&rsquo;s explore the sky!</h2>
-        <p class="slider__caption-text">This is&nbsp;Photoshop&rsquo;s version of&nbsp;Lorem Ipsum. Proin gravida nibh vel velit auctor
-          aliquet.</p>
-      </div>
-      <ul class="slider__banner-btns">
-        <li class="slider__banner-btn slider__banner-btn--l">
-          <a class="slider__banner-btn-link" href="#">Learn more</a>
+      <ul class="slider__list tns-slider">
+        <li class="slider__item slider__item--first">
+          <div class="slider__item-wrapper">
+            <svg width="62" height="60" xmlns="http://www.w3.org/2000/svg" class="slider__img">
+              <use xlink:href="img/sprite.svg#rocket"></use>
+            </svg>
+            <div class="slider__caption padded">
+              <h2 class="slider__caption-headline">Let&rsquo;s explore the sky!</h2>
+              <p class="slider__caption-text">This is&nbsp;Photoshop&rsquo;s version of&nbsp;Lorem Ipsum. Proin gravida nibh vel velit
+                auctor
+                aliquet.</p>
+            </div>
+          </div>
         </li>
-        <li class="slider__banner-nobtn">
-          <span>or</span>
+        <li class="slider__item slider__item--second">
+          <div class="slider__item-wrapper">
+            <svg width="62" height="60" xmlns="http://www.w3.org/2000/svg" class="slider__img">
+              <use xlink:href="img/sprite.svg#rocket"></use>
+            </svg>
+            <div class="slider__caption padded">
+              <h2 class="slider__caption-headline">Let&rsquo;s explore the sky!</h2>
+              <p class="slider__caption-text">This is&nbsp;Photoshop&rsquo;s version of&nbsp;Lorem Ipsum. Proin gravida nibh vel velit
+                auctor
+                aliquet.This is&nbsp;Photoshop&rsquo;s version of&nbsp;Lorem Ipsum. Proin gravida nibh vel velit auctor
+                aliquet.</p>
+            </div>
+          </div>
         </li>
-        <li class="slider__banner-btn slider__banner-btn--r">
-          <a class="slider__banner-btn-link" href="#">Contact&nbsp;us</a>
+        <li class="slider__item slider__item--third">
+          <div class="slider__item-wrapper">
+            <svg width="62" height="60" xmlns="http://www.w3.org/2000/svg" class="slider__img">
+              <use xlink:href="img/sprite.svg#rocket"></use>
+            </svg>
+            <div class="slider__caption padded">
+              <h2 class="slider__caption-headline">Let&rsquo;s explore the sky!</h2>
+              <p class="slider__caption-text">This is&nbsp;Photoshop&rsquo;s version of&nbsp;Lorem Ipsum. </p>
+            </div>
+          </div>
         </li>
-
       </ul>
-      <div class="slider__banner-nav">
-        <a class="slider__banner-nav-dot slider__banner-nav-dot--active" href="#"></a>
-        <a class="slider__banner-nav-dot" href="#"></a>
-        <a class="slider__banner-nav-dot" href="#"></a>
+      <div class="slider__banner-btns-wrapper">
+        <ul class="slider__banner-btns">
+          <li class="slider__banner-btn slider__banner-btn--l">
+            <a class="slider__banner-btn-link" href="#">Learn more</a>
+          </li>
+          <li class="slider__banner-nobtn">
+            <span>or</span>
+          </li>
+          <li class="slider__banner-btn slider__banner-btn--r">
+            <a class="slider__banner-btn-link" href="#">Contact&nbsp;us</a>
+          </li>
+        </ul>
+        <div class="slider__banner-nav">
+          <a class="slider__banner-nav-dot" href="#"></a>
+          <a class="slider__banner-nav-dot" href="#"></a>
+          <a class="slider__banner-nav-dot" href="#"></a>
+        </div>
       </div>
+
     </section>
     <section class="services" id="services">
       <h2 class="services__headline visually-hidden">Services</h2>
@@ -168,50 +202,122 @@
         <p class="section-name__desc">This is&nbsp;Photoshop&rsquo;s version of&nbsp;Lorem Ipsum. Proin gravida nibh vel velit auctor
           aliquet.</p>
       </div>
-      <div class="portfolio__wrapper">
-        <ul class="portfolio__list">
-          <li class="portfolio__item">
-            <picture>
-              <source type="image/webp" srcset="img/Syllabus-Inspire.webp 1x, img/Syllabus-Inspire@2x.webp 2x">
-              <img width="349" height="218" class="portfolio__item-img" src="img/Syllabus-Inspire.jpg" srcset="img/Syllabus-Inspire@2x.jpg 2x" alt="syllabys photo">
-            </picture>
-              <a class="portfolio__item-link" href="#">Sylabus</a>
-          </li>
-          <li class="portfolio__item">
-            <picture>
-              <source type="image/webp" srcset="img/contest.webp 1x, img/contest@2x.webp 2x">
-              <img width="349" height="218" class="portfolio__item-img" src="img/contest.jpg" srcset="img/contest@2x.jpg 2x" alt="contest photo">
-            </picture>
-              <a class="portfolio__item-link" href="#">Contest</a>
-          </li>
-          <li class="portfolio__item">
-            <picture>
-              <source type="image/webp" srcset="img/Wayfaring.webp 1x, img/Wayfaring@2x.webp 2x">
-              <img width="349" height="218" class="portfolio__item-img" src="img/Wayfaring.jpg" srcset="img/Wayfaring@2x.jpg 2x" alt="wayfaring photo">
-            </picture>
-              <a class="portfolio__item-link" href="#">Travel</a>
-          </li>
-          <li class="portfolio__item">
-            <picture>
-              <source type="image/webp" srcset="img/all-category-hover.webp 1x, img/all-category-hover@2x.webp 2x">
-              <img width="349" height="218" class="portfolio__item-img" src="img/all-category-hover.jpg" srcset="img/all-category-hover@2x.jpg 2x" alt="shop photo">
-            </picture>
-              <a class="portfolio__item-link" href="#">Shop</a>
-          </li>
-        </ul>
+      <div class="portfolio__slider-wrapper">
+        <div class="portfolio__slider">
+          <div class="portfolio__list-wrapper portfolio__list-wrapper--active">
+            <ul class="portfolio__list">
+              <li class="portfolio__item">
+                <picture>
+                  <source type="image/webp" srcset="img/Syllabus-Inspire.webp 1x, img/Syllabus-Inspire@2x.webp 2x">
+                  <img width="349" height="218" class="portfolio__item-img" src="img/Syllabus-Inspire.jpg" srcset="img/Syllabus-Inspire@2x.jpg 2x" alt="syllabys photo">
+                </picture>
+                  <a class="portfolio__item-link" href="#">Sylabus</a>
+              </li>
+              <li class="portfolio__item">
+                <picture>
+                  <source type="image/webp" srcset="img/contest.webp 1x, img/contest@2x.webp 2x">
+                  <img width="349" height="218" class="portfolio__item-img" src="img/contest.jpg" srcset="img/contest@2x.jpg 2x" alt="contest photo">
+                </picture>
+                  <a class="portfolio__item-link" href="#">Contest</a>
+              </li>
+              <li class="portfolio__item">
+                <picture>
+                  <source type="image/webp" srcset="img/Wayfaring.webp 1x, img/Wayfaring@2x.webp 2x">
+                  <img width="349" height="218" class="portfolio__item-img" src="img/Wayfaring.jpg" srcset="img/Wayfaring@2x.jpg 2x" alt="wayfaring photo">
+                </picture>
+                  <a class="portfolio__item-link" href="#">Travel</a>
+              </li>
+              <li class="portfolio__item">
+                <picture>
+                  <source type="image/webp" srcset="img/all-category-hover.webp 1x, img/all-category-hover@2x.webp 2x">
+                  <img width="349" height="218" class="portfolio__item-img" src="img/all-category-hover.jpg" srcset="img/all-category-hover@2x.jpg 2x" alt="shop photo">
+                </picture>
+                  <a class="portfolio__item-link" href="#">Shop</a>
+              </li>
+            </ul>
+            
+          </div>
+          <div class="portfolio__list-wrapper">
+            <ul class="portfolio__list">
+              <li class="portfolio__item">
+                <picture>
+                  <source type="image/webp" srcset="img/Syllabus-Inspire.webp 1x, img/Syllabus-Inspire@2x.webp 2x">
+                  <img width="349" height="218" class="portfolio__item-img" src="img/Syllabus-Inspire.jpg" srcset="img/Syllabus-Inspire@2x.jpg 2x" alt="syllabys photo">
+                </picture>
+                  <a class="portfolio__item-link" href="#">Sylabus</a>
+              </li>
+              <li class="portfolio__item">
+                <picture>
+                  <source type="image/webp" srcset="img/contest.webp 1x, img/contest@2x.webp 2x">
+                  <img width="349" height="218" class="portfolio__item-img" src="img/contest.jpg" srcset="img/contest@2x.jpg 2x" alt="contest photo">
+                </picture>
+                  <a class="portfolio__item-link" href="#">Contest</a>
+              </li>
+              <li class="portfolio__item">
+                <picture>
+                  <source type="image/webp" srcset="img/Wayfaring.webp 1x, img/Wayfaring@2x.webp 2x">
+                  <img width="349" height="218" class="portfolio__item-img" src="img/Wayfaring.jpg" srcset="img/Wayfaring@2x.jpg 2x" alt="wayfaring photo">
+                </picture>
+                  <a class="portfolio__item-link" href="#">Travel</a>
+              </li>
+              <li class="portfolio__item">
+                <picture>
+                  <source type="image/webp" srcset="img/all-category-hover.webp 1x, img/all-category-hover@2x.webp 2x">
+                  <img width="349" height="218" class="portfolio__item-img" src="img/all-category-hover.jpg" srcset="img/all-category-hover@2x.jpg 2x" alt="shop photo">
+                </picture>
+                  <a class="portfolio__item-link" href="#">Shop</a>
+              </li>
+            </ul>
+            
+          </div>
+          <div class="portfolio__list-wrapper">
+            <ul class="portfolio__list">
+              <li class="portfolio__item">
+                <picture>
+                  <source type="image/webp" srcset="img/Syllabus-Inspire.webp 1x, img/Syllabus-Inspire@2x.webp 2x">
+                  <img width="349" height="218" class="portfolio__item-img" src="img/Syllabus-Inspire.jpg" srcset="img/Syllabus-Inspire@2x.jpg 2x" alt="syllabys photo">
+                </picture>
+                  <a class="portfolio__item-link" href="#">Sylabus</a>
+              </li>
+              <li class="portfolio__item">
+                <picture>
+                  <source type="image/webp" srcset="img/contest.webp 1x, img/contest@2x.webp 2x">
+                  <img width="349" height="218" class="portfolio__item-img" src="img/contest.jpg" srcset="img/contest@2x.jpg 2x" alt="contest photo">
+                </picture>
+                  <a class="portfolio__item-link" href="#">Contest</a>
+              </li>
+              <li class="portfolio__item">
+                <picture>
+                  <source type="image/webp" srcset="img/Wayfaring.webp 1x, img/Wayfaring@2x.webp 2x">
+                  <img width="349" height="218" class="portfolio__item-img" src="img/Wayfaring.jpg" srcset="img/Wayfaring@2x.jpg 2x" alt="wayfaring photo">
+                </picture>
+                  <a class="portfolio__item-link" href="#">Travel</a>
+              </li>
+              <li class="portfolio__item">
+                <picture>
+                  <source type="image/webp" srcset="img/all-category-hover.webp 1x, img/all-category-hover@2x.webp 2x">
+                  <img width="349" height="218" class="portfolio__item-img" src="img/all-category-hover.jpg" srcset="img/all-category-hover@2x.jpg 2x" alt="shop photo">
+                </picture>
+                  <a class="portfolio__item-link" href="#">Shop</a>
+              </li>
+            </ul>
+            
+          </div>
+        </div>
         <div class="portfolio__nav-arrow-list">
-          <a class="portfolio__nav-link" href="#">
+          <button type="button" class="portfolio__nav-link portfolio__nav-link--left">
             <svg xmlns="http://www.w3.org/2000/svg" class="portfolio__nav-arrow portfolio__nav-arrow--empty">
               <use xlink:href="img/sprite.svg#arrow-left"></use>
             </svg>
-          </a>
-          <a class="portfolio__nav-link" href="#">
+          </button>
+          <button type="button" class="portfolio__nav-link portfolio__nav-link--right">
             <svg xmlns="http://www.w3.org/2000/svg" class="portfolio__nav-arrow">
               <use xlink:href="img/sprite.svg#arrow-right"></use>
             </svg>
-          </a>
+          </button>
         </div>
       </div>
+      
     </section>
     <section class="testimonials" id="testimonials">
       <div class="testimonials__section-name section-name">
@@ -369,7 +475,9 @@
     <section class="map" id="contacts">
       <h2 class="visually-hidden">Contacs</h2>
       <div class="map__no-scroll" onclick="style.pointerEvents='none'"></div>
-      <iframe class="map__google" src="https://www.google.com/maps/d/u/0/embed?mid=1D3SCwowiLEWNSsTU3ciA_PyliZyJPH9H"></iframe>
+      <div class="map__google"></div>
+      <!-- <iframe src="https://snazzymaps.com/embed/119590" width="100%" height="458px" style="border:none;"></iframe> -->
+      <!-- <iframe class="map__google" src="https://www.google.com/maps/d/u/0/embed?mid=1D3SCwowiLEWNSsTU3ciA_PyliZyJPH9H"></iframe> -->
       <div class="map__vcard vcard">
         <p class="vcard__fn fn visually-hidden">Orion</p>
         <p class="vcard__org org visually-hidden">Orion</p>
@@ -468,7 +576,9 @@
     </div>
   </footer>
   <!-- <script src="js/picturefill.js"></script> -->
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCafZ5HV-oZwlJ_qKRvjSLYmB5N89SrsQk&callback=initMap" async="" defer=""></script>
   <script src="js/script.min.js"></script>
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.8.8/min/tiny-slider.js"></script> -->
   <!-- <script src="js/svgxuse.js"></script> -->
 </body>
 

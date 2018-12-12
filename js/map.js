@@ -180,7 +180,7 @@ function initMap() {
 var marker = new google.maps.Marker({
   position: target,
   map: map,
-  icon: "../img/placeholder.png"
+  icon: "img/placeholder.png"
 });
 }
 initMap();

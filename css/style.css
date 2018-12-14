@@ -548,7 +548,8 @@ a {
 button {
   padding: 0;
   background-color: transparent;
-  border: 0; }
+  border: 0;
+  cursor: pointer; }
 
 .container {
   width: auto;
@@ -587,7 +588,7 @@ button {
   font-size: 14px;
   font-family: "Open Sans", arial, serif;
   text-align: center;
-  color: #a1a1a1; }
+  color: #484848; }
   @media (max-width: 320px) {
     .section-name__desc {
       padding: 0 15px;
@@ -1014,6 +1015,9 @@ button {
   text-shadow: none; }
 
 .slider__banner-btn-link {
+  font-family: montserrat, arial, serif;
+  text-transform: uppercase;
+  font-weight: 700;
   color: #ffffff;
   text-shadow: none; }
 
@@ -1110,7 +1114,7 @@ button {
   border: 1px solid #cbd7e4;
   border-radius: 5px; }
   .services__link:hover .services__link-icon {
-    opacity: 0.6; }
+    fill: #202020; }
 
 .services__link-icon {
   width: 38px;
@@ -1133,7 +1137,7 @@ button {
   font-size: 14px;
   line-height: 24px;
   font-family: Open Sans, arial, serif;
-  color: #88929d;
+  color: #484848;
   margin-bottom: 29px; }
   @media (max-width: 768px) {
     .services__desc {
@@ -1251,7 +1255,7 @@ button {
   margin-bottom: 15px;
   font-weight: 700;
   font-size: 14px;
-  color: #717171; }
+  color: #484848; }
   .timeline__step-headline::before {
     content: "";
     position: absolute;
@@ -1267,7 +1271,7 @@ button {
 .timeline__step-decs {
   font-weight: 400;
   font-size: 12px;
-  color: #898989; }
+  color: #484848; }
   @media (max-width: 768px) {
     .timeline__step-decs {
       font-size: 12px; } }
@@ -1398,7 +1402,7 @@ button {
           justify-content: flex-end;
   font-size: 24px; }
   .portfolio__nav-arrow-list:focus {
-    outline: none; }
+    outline: transparent; }
   @media (max-width: 768px) {
     .portfolio__nav-arrow-list {
       -webkit-box-pack: center;
@@ -1526,7 +1530,7 @@ button {
   line-height: 30px;
   font-family: "Open Sans", arial, serif;
   text-align: left;
-  color: #959595; }
+  color: #484848; }
   @media (max-width: 768px) {
     .testimonials__quote-text {
       font-size: 13px; } }
@@ -1604,7 +1608,7 @@ button {
   margin-bottom: 0;
   font-weight: 400;
   font-size: 19px;
-  color: #363636; }
+  color: #484848; }
   @media (max-width: 768px) {
     .team__item-name {
       font-size: 17px; } }
@@ -1616,7 +1620,7 @@ button {
   font-size: 12px;
   font-family: "Open Sans", arial, serif;
   text-align: center;
-  color: #b7b7b7; }
+  color: #484848; }
   @media (max-width: 768px) {
     .team__item-prof {
       font-size: 10px; } }
@@ -1716,7 +1720,7 @@ button {
   padding: 32px 23px 15px;
   font-size: 18px;
   text-align: left;
-  color: #545454; }
+  color: #484848; }
   @media (max-width: 768px) {
     .vcard__adr {
       padding-bottom: 28px; } }
@@ -1728,7 +1732,7 @@ button {
   padding-left: 23px;
   font-size: 14px;
   text-align: left;
-  color: #acacac;
+  color: #484848;
   text-decoration: none; }
   .vcard__tel-link:hover {
     text-decoration: underline; }
@@ -1954,7 +1958,7 @@ button {
   font-size: 14px;
   font-family: lato, arial, serif;
   text-align: center;
-  color: #b7b7b7;
+  color: #ffffff;
   background-color: #555555;
   border: none; }
   .footer__subscribe-button:hover {
@@ -1963,7 +1967,7 @@ button {
 .footer__copyright {
   margin-bottom: 17px;
   text-align: right;
-  color: #535353; }
+  color: #ffffff; }
   @media (max-width: 320px) {
     .footer__copyright {
       font-size: 12px; } }
@@ -1982,7 +1986,7 @@ button {
 .footer__good-bye {
   font-family: lato, arial, serif;
   text-align: right;
-  color: #545454; }
+  color: #ffffff; }
   @media (max-width: 320px) {
     .footer__good-bye {
       font-size: 12px; } }
